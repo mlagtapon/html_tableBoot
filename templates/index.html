@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- load Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+        <script src="://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    </head>
+</head>
+
+<body>
+    <div>
+        <div class="container text-center p-3 mb-2 bg-light text-white">
+            <h1 class="text-primary mr-5">Users:</h1>
+            <table class="table table-bordered">
+            <thead class="thead-light">
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Full Name</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr class="table-primary">
+                <td>{{ users[0]['first_name'] }}</td>
+                <td class="td-sucess">{{ users[0]['last_name'] }}</td>
+                <td>{{ users[0]['first_name'] + " " + users[0]['last_name'] }}</td>
+            </tr>
+            <tr class="table-warning">
+                <td>{{ users[1]['first_name'] }}</td>
+                <td>{{ users[1]['last_name'] }}</td>
+                <td>{{ users[1]['first_name'] + " " + users[1]['last_name'] }}</td>
+            </tr>
+            <tr class="table-success">
+                <td>{{ users[2]['first_name'] }}</td>
+                <td>{{ users[2]['last_name'] }}</td>
+                <td>{{ users[2]['first_name'] + " " + users[2]['last_name'] }}</td>
+            </tr>
+            <tr class="table-danger">
+                <td>{{ users[3]['first_name'] }}</td>
+                <td>{{ users[3]['last_name'] }}</td>
+                <td>{{ users[3]['first_name'] + " " + users[3]['last_name'] }}</td>
+            </tr>
+            </tbody>
+            </table>
+    </div>
+</body>
+</html>
